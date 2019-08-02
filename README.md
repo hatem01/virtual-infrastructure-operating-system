@@ -1,6 +1,6 @@
 # vCDN Infrastructure Optimization Simulator
 
-> Ignacio Tamayo, TSP, 2016
+> IBN KHEDHER Hatem
 >
 > Version 1.4
 >
@@ -67,17 +67,15 @@ The OpenStack DataCenters should have given `Tenants` created, associating each 
 > **NOTE:** Make sure the `endpoints` set in the `Keystone` service are properly reachable and point to the appropriate API HTTP url.
 
 
-## Folders Structure
+## Structure
 
- * db : SQL scripts and database description.
+ * SQL scripts and database description.
  
- * bin/CPLEX : This is where the CPLEX files are left after OMAC is run. These files are to be imported into a
+ * CPLEX files are left after OMAC is run. These files are to be imported into a
  
- * bin : Python code, the main library package is `vIOSLib` and the executable Demo is `vIOSimulator.py`.
- 
- * doc : Python code documentation from pydoc. The same documentation is available inline in the Python code.
- 
- * tests : Bash scripts for testing the initial deployment.
+ * Python code, the main library package is `vIOSLib` and the executable Demo is `vIOSimulator.py`.
+  
+ * Bash scripts for testing the initial deployment.
  
 ## Installl Instructions
 
@@ -85,7 +83,7 @@ The OpenStack DataCenters should have given `Tenants` created, associating each 
 
 Once dowloaded the repository, first create a DataBase by executing the SQL script
 
-		mysql -u root -p [-h <server>] <  db/vIOS_db.sql
+		mysql -u root -p [-h <server>] <  vIOS_db.sql
 
 Test the connectivity by
 
@@ -174,10 +172,9 @@ Restart the Service Daemon
 
 ## Authors and license
 
-Author: Jose Ignacio Tamayo. Master of Science student at Telecom SudParis, France
-Email: jose.tamayo@telecom-sudparis.eu
+Author: IBN KHEDHER Hatem, France
+Email: ibnkhedherhatem@gmail.com
 
-This program was developped as part of a 6 months intership in the Réseaux et Services de Télécommunications (RST) at Telecom SudParis University. [RST](http://rst.telecom-sudparis.eu/fr)
 
 This code is delivered AS IS, no warranty is provided neither support nor maintenance.
 
